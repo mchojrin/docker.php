@@ -5,7 +5,7 @@ echo "<h1>Hello world!</h1>";
 $mysqli = new mysqli(
    'localhost',
    'my_user',
-   'my_pass',
+   'my_password',
    'my_db' 
 );
 
