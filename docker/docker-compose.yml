@@ -20,6 +20,8 @@ services:
     volumes:
       - '../app:/var/www/html' 
       - './php/php.ini:/usr/local/etc/php/php.ini'
+      - './apache/apache2.conf:/etc/apache2/apache2.conf'
+
 volumes:
   db-data:
     name: 'my_app_db_data'
