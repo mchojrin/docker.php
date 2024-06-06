@@ -1,0 +1,10 @@
+<?php
+
+
+return [
+   'DB_HOST' => 'db',
+   'DB_NAME' => 'my_db',
+   'DB_USER' => 'my_user',
+   'DB_PASS' => 'my_password',
+];
+

@@ -2,11 +2,12 @@
 
 echo "<h1>Hello world!</h1>";
 
+$config = require_once 'config.php';
 $mysqli = new mysqli(
-   'localhost',
-   'my_user',
-   'my_password',
-   'my_db' 
+   $config['DB_HOST'],
+   $config['DB_USER'],
+   $config['DB_PASS'],
+   $config['DB_NAME']
 );
 
 if (mysqli_connect_error()) {
