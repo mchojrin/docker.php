@@ -3,6 +3,10 @@ services:
     image: 'mysql:8.0.35-debian'
     environment:
       - MYSQL_ROOT_PASSWORD=root    
+      - MYSQL_DATABASE=my_db
+      - MYSQL_USER=my_user
+      - MYSQL_PASSWORD=my_password
+
   webserver:
     image: 'my_app_webserver'
     build:
