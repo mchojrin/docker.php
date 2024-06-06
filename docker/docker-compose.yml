@@ -6,6 +6,8 @@ services:
       - MYSQL_DATABASE=my_db
       - MYSQL_USER=my_user
       - MYSQL_PASSWORD=my_password
+    volumes:
+      - './mysql/init.sql:/docker-entrypoint-initdb.d/init.sql'
 
   webserver:
     image: 'my_app_webserver'
