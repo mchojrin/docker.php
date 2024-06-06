@@ -18,4 +18,7 @@ services:
       - '9271:80'
     volumes:
       - '../app:/var/www/html' 
+volumes:
+  db-data:
+    name: 'my_app_db_data'
 
