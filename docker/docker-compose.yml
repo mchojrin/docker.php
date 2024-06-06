@@ -1,0 +1,11 @@
+services:
+  db:
+    image: 'mysql:8.0.35-debian'
+    environment:
+      - MYSQL_ROOT_PASSWORD=root    
+  webserver:
+    image: 'my_app_webserver'
+    build:
+      context: '..'
+      dockerfile: 'docker/Dockerfile'
+
